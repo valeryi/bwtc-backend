@@ -1,0 +1,123 @@
+{
+    "keyboards": {
+        "main": {
+            "shop": "🤟 Shop",
+            "cart": "🛒 Cart",
+            "cooperation": "🤝 Work",
+            "shops": "📌 Shops",
+            "settings": "⚙ Settings",
+            "contacts": "📲 Contacts"
+        }
+    },
+    "navigation": {
+        "home": "🏠 Home",
+        "back": "⬅ back",
+        "addToCart": "🛒 To cart",
+        "pay": "💳 Pay",
+        "cancel": "Cancel"
+    },
+    "alerts": {
+        "cancelled": "Cancelled 😓",
+        "deleted": "Item deleted",
+        "notDeleted": "Couldn't delete the item",
+        "putToCart": "Item put to cart",
+        "amountUpdated": "Amount information updated",
+        "packUpdated": "Pack information updated",
+        "itemNotFound": "No such item in your cart",
+        "languageUpdated": "Language updated"
+    },
+    "toAction": {
+        "choose": "Choose 👇",
+        "enter": "Enter 👇",
+        "chooseOptionToPay": "Choose any of these options to pay 👆",
+        "needEdit": "If you need to correct any of them, just click on it",
+        "choosePack": "Choose pack 👇",
+        "enterAmount": "Enter amount 👇",
+        "whatsNext": "What's next? 👇",
+        "customizeMe": "Customize me! 👇",
+        "pickCoffee": "Go to pick some coffee 👇",
+        "pickLanguage": "Pick any of the avaliable languages 👇"
+    },
+    "feedback": {
+        "onCartCancel": {
+            "noticed": "We noticed that you've recantly cancelled on some of our products",
+            "offer": "If you need to get any consultation with out specialist, tap the button below",
+            "actionButton": "Need consultation"
+        }
+    },
+    "scenes": {
+        "shop": {
+            "youPicked": "You picked",
+            "itCosts": "It costs",
+            "for": "for",
+            "items": "item(s)",
+            "popup":"Our coffee 👇",
+            "questions": {
+                "addOrPay": "Would you like to add it to your cart or you want to pay at once? 🙄",
+                "amount": {
+                    "question": "How many packs do you want?",
+                    "validation": {
+                        "notNumber1": "Entered input is not a valid number",
+                        "notNumber2": "Try again, please",
+                        "notNumber3": "Enter the amount 👇"
+                    }
+                },
+                "grind": {
+                    "question": "Would you like us to grind it?",
+                    "answers": {
+                        "yes": "Yes",
+                        "no": "No"
+                    }
+                },
+                "method": {
+                    "question": "How are you gonna make your coffee?"
+                }
+            }
+        },
+        "payment": {
+            "paymentList": "Options to pay",
+            "options": {
+                "privatBank": "Transfer to card «PrivatBank»",
+                "novaPoshta": "Pay at receiving «NovaPoshta»",
+                "pickup": "Pickup in Kiev",
+                "delivery": "Delivery around Kiev"
+            },
+            "phoneNumberQuestion": "Leave your phone number in format (+38********)",
+            "managerWillContact": "Thank you! Our manager will contact you soon to specify details"
+        },
+        "cart": {
+            "notEmpty": {
+                "have": "What you have in your cart for now",
+                "totalInCart": "Total to pay:"
+            },
+            "empty": {
+                "isEmpty": "Your cart is empty now"
+            },
+            "edit": {
+                "question": "What do you need to edit?",
+                "answers": {
+                    "pack": "Pack information updated",
+                    "amount": "Amount information updated",
+                    "delete": "Item has been deleted"
+                },
+                "options": {
+                    "pack": "Pack",
+                    "amount": "Amount",
+                    "delete": "Delete"
+                }
+            }
+        },
+        "settings": {
+            "language": "🇬🇧 Change language"
+        },
+        "start": {
+            "greeting": "Hey,",
+            "welcome": "Welcome to BWTC BOT!"
+        }
+    },
+    "system": {
+        "commandNotFound": "This command doesn't work here. Use your keyboard, please, to navigate around.",
+        "error": "Something went wrong...",
+        "underConstruction": "This section is currently under construction..."
+    }
+}

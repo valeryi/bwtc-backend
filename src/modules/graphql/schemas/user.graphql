@@ -1,0 +1,47 @@
+extend type Query {
+	allUsers: [User]
+	fetchUser(id: String): User
+}
+
+extend type Mutation {
+	createUser(data: InputUser!): User!
+	deleteUser(id: String): User!
+	updateUser(id: String!, data: Params!): User!
+}
+
+type User {
+	_id: ID!
+	firstName: String
+	lastName: String
+	email: String
+	confirmed: Boolean
+	role: ROLE
+	createdAt: DateTime
+	updatedAt: DateTime
+}
+
+input Params {
+	name: String
+	role: ROLE
+	confirmed: Boolean
+	firstName: String
+	lastName: String
+	email: String
+	facebook: String
+	instagram: String
+}
+
+input InputUser {
+	firstName: String
+	lastName: String
+	email: String!
+	password: String!
+	confirm: String!
+	confirmed: Boolean
+	role: ROLE
+}
+
+enum ROLE {
+	USER, 
+	ADMIN
+}

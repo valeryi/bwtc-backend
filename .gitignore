@@ -1,0 +1,11 @@
+node_modules
+dist 
+.env 
+
+# Exclude all log files
+logs
+*.log
+
+# GoogleAPI Sensitive Files
+token.json
+credentials.json
