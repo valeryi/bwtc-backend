@@ -1,0 +1,65 @@
+extend type Query {
+  allOrders: [Order]
+  fetchOrder(id: String): Order
+}
+
+extend type Mutation {
+  createOrder(data: InputOrderParams!): Order!
+  deleteOrder(id: String): Order!
+  updateOrder(id: String!, data: InputOrderParams!): Order!
+}
+
+input InputProductDetailQuestion {
+    question: String
+    answer: String 
+}
+
+type ProductDetailQuestion {
+  question: String
+  answer: String
+}
+
+type CartItem {
+    _id: String
+    client_id: String
+    product_id: String
+    product_name: String
+    pack: String
+    amount: Int
+    unit_price: Float
+    unit_total: Float
+    details: [ProductDetailQuestion]
+}
+
+input InputCartItem {
+  _id: String
+  client_id: String
+  product_id: String
+  product_name: String
+  pack: String
+  amount: Int
+  unit_price: Float
+  unit_total: Float
+  details: [InputProductDetailQuestion]
+}
+
+type Order {
+  _id: ID!
+  client_id: String
+  client_name: String
+  client_phone_number: String
+  item_number: Int
+  order_total: Float
+  items: [CartItem]
+  payment_method: String
+}
+
+input InputOrderParams {
+  client_id: String
+  client_name: String
+  client_phone_number: String
+  item_number: Int
+  order_total: Float
+  items: [InputCartItem]
+  payment_method: String
+}

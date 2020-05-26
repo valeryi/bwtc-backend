@@ -1,5 +1,4 @@
 import { isAuthorized } from '../rules';
-import { allow } from 'graphql-shield';
 
 export const permissions = {
 
@@ -9,7 +8,7 @@ export const permissions = {
     },
 
     Mutation: {
-        createUser: allow,
+        createUser: isAuthorized,
         deleteUser: isAuthorized,
         updateUser: isAuthorized
     }

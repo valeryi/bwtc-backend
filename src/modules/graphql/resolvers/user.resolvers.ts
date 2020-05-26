@@ -26,8 +26,8 @@ export const resolvers = {
             return await userService.deleteUser(id);
         },
 
-        updateUser: (_obj: any, { id, data }: any, _context: any, _info: any) => {
-            return userService.updateUser(id, data);
+        updateUser: async (_obj: any, { id, data }: any, _context: any, _info: any) => {
+            return await userService.updateUser(id, data);
         }
     }
 }
