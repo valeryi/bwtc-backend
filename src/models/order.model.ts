@@ -8,7 +8,9 @@ export type IOrder = {
   item_number: number;
   order_total: number;
   items: object[];
-  payment_method: string
+  payment_method: string;
+  status?: string;
+  payment_status?: string
 };
 
 const orderSchema: Schema = new mongoose.Schema(
@@ -39,6 +41,14 @@ const orderSchema: Schema = new mongoose.Schema(
     },
     payment_method: {
       type: String
+    },
+    status: {
+      type: String,
+      default: 'OPEN'
+    },
+    payment_status: {
+      type: String,
+      default: 'NOT PAID'
     }
   },
 
