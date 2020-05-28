@@ -1,5 +1,6 @@
 import { orderService } from "../../../services/order.service";
 import { IOrder } from "../../../models/order.model";
+import { ClientModel } from "../../../models/client.model";
 
 export const resolvers = {
   Query: {
@@ -14,6 +15,10 @@ export const resolvers = {
     ) => {
       return await orderService.fetchOrder(id);
     },
+  },
+
+  Order: {
+    client: (order: any) => ClientModel.findOne({ _id: order.client_id }), // TODO: Solve N + 1 Problem
   },
 
   Mutation: {

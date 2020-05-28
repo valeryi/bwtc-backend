@@ -10,7 +10,7 @@ export type IOrder = {
   items: object[];
   payment_method: string;
   status?: string;
-  payment_status?: string
+  payment_status?: string;
 };
 
 const orderSchema: Schema = new mongoose.Schema(
@@ -57,4 +57,4 @@ const orderSchema: Schema = new mongoose.Schema(
   }
 );
 
-export const OrderModel = mongoose.model("Order", orderSchema, "order");
+export const OrderModel = mongoose.model("Order", orderSchema, "orders");

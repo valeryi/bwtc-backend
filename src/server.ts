@@ -12,12 +12,12 @@ import { initTelegramBot } from './modules/telegram_bot/bot';
 
 process.on("uncaughtException", (e: Error) => { 
     logger.error(e);
-    process.exit(1);
+    // process.exit(1);
 });
 
 process.on("unhandledRejection", (e: any) => {
     logger.error(e);
-    process.exit(1);
+    // process.exit(1);
 });
 
 const app = express();

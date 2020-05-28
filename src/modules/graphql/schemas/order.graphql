@@ -43,17 +43,29 @@ input InputCartItem {
 	details: [InputProductDetailQuestion]
 }
 
+type Client {
+	_id: ID!
+	telegram_id: Int
+	first_name: String
+	last_name: String
+	username: String
+	language_code: String
+	last_activity: Date
+	email: String
+	phone_number: String
+	createdAt: String
+	updatedAt: String
+}
+
 type Order {
 	_id: ID!
-	client_id: String
-	client_name: String
-	client_phone_number: String
+	client: Client
 	item_number: Int
 	order_total: Float
-	items: [CartItem]
 	payment_method: String
 	status: String
 	payment_status: String
+	items: [CartItem]
 	createdAt: String
 	updatedAt: String
 }
